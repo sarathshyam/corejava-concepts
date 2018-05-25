@@ -12,10 +12,9 @@ with proper clearn up
 
 1. **Static factory methods instead of constructors**
 
-    - public static method that returns the instance of a class. Eg ref Boolean class.
+    public static method that returns the instance of a class. Eg ref Boolean class.
     
-    Pros of SFM wrto constructors
-    
+    Pros of SFM compared to constructors
     - They have names unlike constructors, so better express the instance returned.
     - Can be useful for cases when a class needs more than one constuctor wiht a given signature. 
     - No need to create new Objects each time they are invoked, so allows caching or pre-constructed objects for
@@ -26,6 +25,9 @@ with proper clearn up
       Eg: java.util.Collections- 
     - Forms basis of service provider frameworks. Eg JDBC API
       
+    Cons of SFM compared to Constructors
+    - Having SFM without public or protected constructors means the class can't be sub-classed.
+    - Not distinguishable from regular static methods.
     
     
 
