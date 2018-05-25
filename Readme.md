@@ -1,4 +1,4 @@
-Java- Concepts and Principles for Quick Reference
+Coding Guide- Concepts and Principles for Quick Reference
 =======================================================
 
 ### Effective Java
