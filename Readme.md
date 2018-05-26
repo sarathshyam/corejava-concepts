@@ -29,6 +29,14 @@ with proper clearn up
     - Having SFM without public or protected constructors means the class can't be sub-classed.
     - Not distinguishable from regular static methods.
     
+2. **Consider *builder* when there are many optional fields**
+
+    - When there are many optional fields, SFM and Constructors are confusing and error prone *to the client*.
+    - Another option is Javabean pattern (setters) but cons are, verbose, object will be in inconsistent state
+      forces the class to be mutable
+    - *Builder* is a good choice in such cases so that it is easy for the client to create the object
+    - Minor disadvantage compared to Constructor or SFM - Creation of additional objects(builder).
+    
     
 
 
