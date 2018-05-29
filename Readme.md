@@ -37,6 +37,33 @@ with proper clearn up
     - *Builder* is a good choice in such cases so that it is easy for the client to create the object
     - Minor disadvantage compared to Constructor or SFM - Creation of additional objects(builder).
     
+3. **Singletons**
+
+    Singleton = One instance per classloader/JVM
+    
+    How to make a class singleton?
+    a. Static field with eagerly created instance
+    b. Static field with lazily created instace (with double checking and synch)
+    c. single element Enum
+    
+    Notes:
+    1. If the Singleton class is serializable, add a readResolve method which returns the static instance.
+     `private Object readResolve(){
+         return INSTANCE;
+     }`
+     
+     The readResolve method is called when ObjectInputStream has read an object from the stream and is preparing to 
+     return it to the caller. ObjectInputStream checks whether the class of the object defines the readResolve method. 
+     If the method is defined, the readResolve method is called to allow the object in the stream to designate the
+     object to be returned. The object returned should be of a type that is compatible with all uses. If it is not 
+     compatible, a ClassCastException will be thrown when the type mismatch is discovered.
+     
+    2. To prevent creating second instance using reflection, modify the constructor to throw exception if asked to
+     create a second instance.
+     
+    
+    
+    
     
 
 

@@ -1,4 +1,4 @@
-package me.sarath.misc;
+package me.corejava.effectivejava.createdestroyobjects.builder;
 
 import me.corejava.effectivejava.createdestroyobjects.builder.Phone;
 import org.junit.Assert;

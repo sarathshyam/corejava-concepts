@@ -1,4 +1,4 @@
-package me.sarath.misc;
+package me.corejava.misc;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package me.sarath.misc;
+package me.corejava.misc;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -25,7 +25,7 @@ public class ComparatorTest {
 
 
 
-    class NumericOrder implements Comparator<Integer>{
+    private class NumericOrder implements Comparator<Integer>{
 
         @Override
         public int compare(Integer o1, Integer o2) {

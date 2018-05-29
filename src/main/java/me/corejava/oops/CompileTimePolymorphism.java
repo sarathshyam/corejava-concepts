@@ -26,6 +26,7 @@ public class CompileTimePolymorphism {
     }
 
     public static void main(String[] args) {
+
         new CompileTimePolymorphism().run();
     }
 }
