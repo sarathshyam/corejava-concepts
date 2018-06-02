@@ -61,7 +61,7 @@ with proper clearn up
     2. To prevent creating second instance using reflection, modify the constructor to throw exception if asked to
      create a second instance.
      
-4. Enforce non-instantialbility with a private constructor  
+4. **Enforce non-instantialbility with a private constructor**  
     
     Utility classes with only static methods can be enforced non-instantiable with a private constructor.  
     Examples of such classes- To group related methods for primitive operations or static factory methods which creates
